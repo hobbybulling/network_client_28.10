@@ -32,8 +32,7 @@ std::string Authenticator::calcSHA1(const std::string& inputData) {
     CryptoPP::StringSource(inputData, true,
         new CryptoPP::HashFilter(sha1,
             new CryptoPP::HexEncoder(
-                new CryptoPP::StringSink(digest),
-                false
+                new CryptoPP::StringSink(digest)
             )
         )
     );
