@@ -5,3 +5,4 @@ bin/
 client
 .vscode/
 .idea/
+vclient.conf
