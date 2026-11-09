@@ -8,6 +8,7 @@ CLIHandler::CLIHandler()
     : serverPort(33333), configFilePath("~/.config/vclient.conf"), helpRequested(false) {}
 
 void CLIHandler::parse(int argc, char** argv) {
+    optind = 0;
     if (argc <= 1) {
         helpRequested = true;
         return;
